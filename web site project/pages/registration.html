@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration - CSE211</title>
+</head>
+<body>
+
+<header>
+    <h1>EduConnect</h1>
+    <p>Your Gateway to Smart Learning</p>
+
+    <nav>
+        <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+            <li><a href="registration.html">Registration</a></li>
+            <li><a href="https://www.gu.edu.eg" target="_blank">Galala University</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- BREADCRUMB -->
+<nav aria-label="breadcrumb">
+    <p>Home > Registration</p>
+</nav>
+
+<!-- MAIN CONTENT -->
+<main>
+
+<h1>Student Registration Form</h1>
+
+<form action="thank.html" method="get" name="registrationForm" id="registrationForm">
+
+
+<!-- SECTION 1: PERSONAL INFO -->
+
+<fieldset>
+    <legend>Personal Information</legend>
+
+    <!-- Full Name -->
+    <label for="fullName">Full Name <span class="required">*</span></label>
+    <input type="text" id="fullName" name="fullName" required minlength="3" maxlength="50"
+           placeholder="Enter your full name" title="Enter your full name (3-50 characters)"
+           autofocus autocomplete="name">
+
+    <br><br>
+
+    <!-- Student ID -->
+    <label for="studentId">Student ID <span class="required">*</span></label>
+    <input type="text" id="studentId" name="studentId" required pattern="^[0-9]{9}$"
+           placeholder="123456789" title="Student ID must be exactly 9 digits">
+
+    <br><br>
+
+    <!-- Email -->
+    <label for="email">Email Address <span class="required">*</span></label>
+    <input type="email" id="email" name="email" required placeholder="student@example.com"
+           title="Enter a valid email address" autocomplete="email">
+
+    <br><br>
+
+    <!-- Password -->
+    <label for="password">Password <span class="required">*</span></label>
+    <input type="password" id="password" name="password" required minlength="8" maxlength="20"
+           placeholder="Minimum 8 characters" title="Password must be 8-20 characters"
+           autocomplete="new-password">
+
+    <br><br>
+
+    <!-- Confirm Password -->
+    <label for="confirmPassword">Confirm Password <span class="required">*</span></label>
+    <input type="password" id="confirmPassword" name="confirmPassword" required minlength="8"
+           maxlength="20" placeholder="Re-enter your password">
+
+    <br><br>
+
+    <!-- Date of Birth -->
+    <label for="dob">Date of Birth <span class="required">*</span></label>
+    <input type="date" id="dob" name="dob" required autocomplete="bday"
+           title="You must be at least 18 years old" max="2007-12-31">
+
+    <br><br>
+
+    <!-- Gender -->
+    <fieldset>
+        <legend>Gender <span class="required">*</span></legend>
+
+        <label><input type="radio" name="gender" value="Male" required> Male</label><br>
+        <label><input type="radio" name="gender" value="Female" required> Female</label><br>
+        <label><input type="radio" name="gender" value="Prefer not to say" required> Prefer not to say</label>
+
+    </fieldset>
+
+    <br>
+
+    <!-- Profile Photo -->
+    <label for="photo">Profile Photo <span class="required">*</span></label>
+    <input type="file" id="photo" name="photo" accept="image/*"
+           title="Upload an image file (jpg, png, etc.)" required>
+
+</fieldset>
+<!-- SECTION 2: ACADEMIC INFO -->
+<fieldset>
+    <legend>Academic Information</legend>
+
+    <!-- Degree Level -->
+    <fieldset>
+        <legend>Current Degree Level <span class="required">*</span></legend>
+
+        <label><input type="radio" name="degree" value="Bachelor" required checked> Bachelor's Degree</label><br>
+        <label><input type="radio" name="degree" value="Master" required> Master's Degree</label><br>
+        <label><input type="radio" name="degree" value="PhD" required> PhD</label>
+    </fieldset>
+
+    <br>
+
+    <!-- Major -->
+    <label for="major">Major / Department <span class="required">*</span></label>
+    <select id="major" name="major" required>
+        <option value="">--Select Your Major--</option>
+
+        <optgroup label="Faculty of Engineering">
+            <option>Computer Science</option>
+            <option>Information Technology</option>
+            <option>Software Engineering</option>
+            <option>Computer Engineering</option>
+        </optgroup>
+
+        <optgroup label="Faculty of Business">
+            <option>Marketing</option>
+            <option>Finance</option>
+            <option>Management</option>
+            <option>Accounting</option>
+        </optgroup>
+
+        <optgroup label="Faculty of Science">
+            <option>Mathematics</option>
+            <option>Physics</option>
+            <option>Biology</option>
+            <option>Chemistry</option>
+        </optgroup>
+
+    </select>
+
+    <br><br>
+
+    <!-- Semester -->
+    <label for="semester">Current Semester <span class="required">*</span></label>
+    <input type="number" id="semester" name="semester" required min="1" max="12"
+           placeholder="1-12" title="Enter a number from 1 to 12">
+
+    <br><br>
+
+    <!-- GPA -->
+    <label for="gpa">Current GPA</label>
+    <input type="number" id="gpa" name="gpa" min="0" max="4" step="0.01"
+           placeholder="0.00 - 4.00" title="Enter GPA (0.00 - 4.00)">
+
+    <br><br>
+
+    <!-- Programming Experience -->
+    <fieldset>
+        <legend>Previous Programming Experience</legend>
+
+        <label><input type="checkbox" name="exp" value="Python"> Python</label><br>
+        <label><input type="checkbox" name="exp" value="Java"> Java</label><br>
+        <label><input type="checkbox" name="exp" value="C++"> C++</label><br>
+        <label><input type="checkbox" name="exp" value="JavaScript"> JavaScript</label><br>
+        <label><input type="checkbox" name="exp" value="PHP"> PHP</label><br>
+        <label><input type="checkbox" name="exp" value="C#"> C#</label><br>
+        <label><input type="checkbox" name="exp" value="None"> None</label>
+
+    </fieldset>
+
+</fieldset>
+<!-- SECTION 3: COURSE PREFS -->
+<fieldset>
+    <legend>Course Preferences</legend>
+
+    <!-- Learning Mode -->
+    <fieldset>
+        <legend>Preferred Learning Mode <span class="required">*</span></legend>
+
+        <label><input type="radio" name="mode" value="On-Campus" required> On-Campus</label><br>
+        <label><input type="radio" name="mode" value="Online" required> Online</label><br>
+        <label><input type="radio" name="mode" value="Hybrid" required> Hybrid Mixed</label>
+    </fieldset>
+
+    <br>
+
+    <!-- Course Categories -->
+    <label for="categories">Course Categories of Interest <span class="required">*</span></label><br>
+    <select id="categories" name="categories" multiple size="5" required>
+        <option>Web Development</option>
+        <option>Mobile Development</option>
+        <option>Data Science</option>
+        <option>Artificial Intelligence</option>
+        <option>Cybersecurity</option>
+        <option>Game Development</option>
+        <option>Cloud Computing</option>
+        <option>Database Management</option>
+        <option>DevOps</option>
+        <option>Blockchain Technology</option>
+    </select>
+    <span class="help-text">Select 1–3 categories (Hold Ctrl/Cmd for multiple)</span>
+
+    <br><br>
+
+    <!-- Schedule -->
+    <label for="schedule">Preferred Class Schedule <span class="required">*</span></label>
+    <select id="schedule" name="schedule" required>
+        <option value="">--Select Schedule--</option>
+        <option>Morning 8:00 AM – 12:00 PM</option>
+        <option>Afternoon 12:00 PM – 4:00 PM</option>
+        <option>Evening 4:00 PM – 8:00 PM</option>
+        <option>Weekend Saturday & Sunday</option>
+    </select>
+
+    <br><br>
+
+    <!-- Primary Course -->
+    <label for="primaryCourse">Primary Course Selection <span class="required">*</span></label>
+    <select id="primaryCourse" name="primaryCourse" required>
+        <option value="">--Select Primary Course--</option>
+
+        <optgroup label="Web Development">
+            <option>HTML & CSS Fundamentals</option>
+            <option>Advanced JavaScript</option>
+            <option>React.js Development</option>
+            <option>Node.js & Backend</option>
+        </optgroup>
+
+        <optgroup label="Mobile Development">
+            <option>Android Development</option>
+            <option>iOS Development</option>
+            <option>Flutter Cross-Platform</option>
+        </optgroup>
+
+        <optgroup label="Data & AI">
+            <option>Python for Data Science</option>
+            <option>Machine Learning</option>
+            <option>Deep Learning</option>
+        </optgroup>
+    </select>
+
+    <br><br>
+
+    <!-- Alternative Courses -->
+    <label for="altCourses">Alternative Courses</label><br>
+    <select id="altCourses" name="altCourses" multiple size="4"
+            title="Select up to 3 alternative courses">
+        <option>SQL & Databases</option>
+        <option>Git & Version Control</option>
+        <option>Docker & Containers</option>
+        <option>AWS Cloud Basics</option>
+        <option>Web Security</option>
+        <option>Software Testing</option>
+    </select>
+
+</fieldset>
+<fieldset>
+    <legend>Additional Information</legend>
+
+    <!-- Source -->
+    <label for="source">How did you hear about us?</label>
+    <select id="source" name="source">
+        <option value="">--Please Select--</option>
+        <option>Search Engine (Google, Bing)</option>
+        <option>Social Media</option>
+        <option>Friend or Colleague</option>
+        <option>University Announcement</option>
+        <option>Online Advertisement</option>
+        <option>Other</option>
+    </select>
+
+    <br><br>
+
+    <!-- Special Requirements -->
+    <label for="specialNeeds">Special Requirements or Accessibility Needs</label><br>
+    <textarea id="specialNeeds" name="specialNeeds" rows="4" cols="50" maxlength="500"
+              placeholder="Enter any special requirements..."
+              title="Maximum 500 characters"></textarea>
+    <span id="counter1"></span>
+
+    <br><br>
+
+    <!-- Learning Goals -->
+    <label for="goals">Your Learning Goals and Expectations</label><br>
+    <textarea id="goals" name="goals" rows="5" cols="50" maxlength="500"
+              placeholder="Describe your learning goals..."></textarea>
+    <span id="counter2"></span>
+
+</fieldset>
+<!-- SECTION 5: TERMS --> 
+<fieldset>
+    <legend>Terms and Conditions</legend>
+
+    <label>
+        <input type="checkbox" name="terms" required>
+        I agree to the <a href="terms.html" target="_blank">Terms and Conditions</a>
+    </label>
+    <br>
+
+    <label>
+        <input type="checkbox" name="privacy" required>
+        I have read and accept the <a href="privacy.html" target="_blank">Privacy Policy</a>
+    </label>
+    <br>
+
+    <label>
+        <input type="checkbox" name="newsletter">
+        Subscribe to our newsletter for course updates and special offers
+    </label>
+    <br>
+
+    <label>
+        <input type="checkbox" name="marketing">
+        I agree to receive marketing communications via email
+    </label>
+
+</fieldset>
+<!-- FORM CONTROLS -->
+<input type="hidden" name="formVersion" value="1.0">
+<input type="hidden" id="submitDate" name="submitDate">
+<input type="hidden" id="userAgent" name="userAgent">
+
+<br>
+
+<button type="submit" name="submitBtn" id="submitBtn">Register Now</button>
+<button type="reset" name="resetBtn" id="resetBtn" title="Clear all form fields">Clear Form</button>
+<button type="button" name="saveDraftBtn" id="saveDraftBtn">Save Draft</button>
+
+
+</form>
+</main>
+
+<footer>
+    <p>©2025 EduConnect - Galala University</p>
+</footer>
+
+<script>
+document.getElementById("submitDate").value = new Date().toISOString();
+document.getElementById("userAgent").value = navigator.userAgent;
+
+// Character counters
+document.getElementById("specialNeeds").addEventListener("input", function() {
+    document.getElementById("counter1").textContent = this.value.length + "/500";
+});
+document.getElementById("goals").addEventListener("input", function() {
+    document.getElementById("counter2").textContent = this.value.length + "/500";
+});
+</script>
+
+</body>
+</html>

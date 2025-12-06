@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Dashboard</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>University Portal</h1>
+        <nav>
+            <a href="../index.html">Home</a> |
+            <a href="student-dashboard.html">Dashboard</a>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb -->
+    <nav aria-label="breadcrumb">
+        <p>Home > Dashboard</p>
+    </nav>
+
+    <hr>
+
+    <!-- MAIN LAYOUT -->
+    <div class="dashboard-layout">
+
+        <!-- Personal Header Area -->
+        <section id="profile-header">
+            <h2>Welcome, Student Name</h2>
+
+            <figure>
+                <img src="../images/Kareem.jpg" alt="Profile Photo" width="150">
+                <figcaption>Your Profile Photo</figcaption>
+            </figure>
+
+            <dl>
+                <dt>Total Courses:</dt>
+                <dd>10</dd>
+
+                <dt>Completed:</dt>
+                <dd>6</dd>
+
+                <dt>In Progress:</dt>
+                <dd>3</dd>
+
+                <dt>Certificates:</dt>
+                <dd>4</dd>
+            </dl>
+        </section>
+
+        <hr>
+
+        <!-- Enrolled Courses -->
+        <section id="enrolled-courses">
+            <h2>Enrolled Courses</h2>
+
+            <!-- Course 1 -->
+            <article>
+                <img src="../images/Web.jpg" alt="Course Thumbnail" width="120">
+                <h3>Web Programming - Dr. Ahmed</h3>
+                <p>Progress: 70%</p>
+                <p>Last accessed: <time datetime="2025-11-20">Nov 20, 2025</time></p>
+                <a href="#">Continue Learning</a>
+            </article>
+
+            <!-- Course 2 -->
+            <article>
+                <img src="../images/database.jpg" alt="Course Thumbnail" width="120">
+                <h3>Database Systems - Dr. Omar</h3>
+                <p>Progress: 40%</p>
+                <p>Last accessed: <time datetime="2025-11-18">Nov 18, 2025</time></p>
+                <a href="#">Continue Learning</a>
+            </article>
+
+            <!-- Course 3 -->
+            <article>
+                <img src="../images/DataStructures.jpg" alt="Course Thumbnail" width="120">
+                <h3>Data Structures - Dr. Sarah</h3>
+                <p>Progress: 85%</p>
+                <p>Last accessed: <time datetime="2025-11-10">Nov 10, 2025</time></p>
+                <a href="#">Continue Learning</a>
+            </article>
+        </section>
+
+        <hr>
+
+        <!-- Progress Statistics -->
+        <section id="progress-statistics">
+            <h2>Overall Progress Statistics</h2>
+
+            <dl>
+                <dt>Courses Completed:</dt>
+                <dd>6</dd>
+
+                <dt>Courses In Progress:</dt>
+                <dd>3</dd>
+
+                <dt>Total Learning Hours:</dt>
+                <dd>120 Hours</dd>
+
+                <dt>Certificates Earned:</dt>
+                <dd>4</dd>
+
+                <dt>Average Quiz Score:</dt>
+                <dd>87%</dd>
+
+                <dt>Current Streak:</dt>
+                <dd>12 days</dd>
+            </dl>
+        </section>
+
+        <hr>
+
+        <!-- Upcoming Deadlines -->
+        <section id="upcoming-deadlines">
+            <h2>Upcoming Deadlines</h2>
+
+            <ol>
+                <li>
+                    Assignment 3 - Web Programming  
+                    <br>Due: <time datetime="2025-12-08">Dec 8, 2025</time>  
+                    <strong>Priority: High</strong>
+                </li>
+
+                <li>
+                    Quiz 2 - Data Structures  
+                    <br>Due: <time datetime="2025-12-12">Dec 12, 2025</time>  
+                    <strong>Priority: Medium</strong>
+                </li>
+
+                <li>
+                    Project Proposal - Database Systems  
+                    <br>Due: <time datetime="2025-12-15">Dec 15, 2025</time>  
+                    <strong>Priority: Low</strong>
+                </li>
+            </ol>
+        </section>
+
+        <hr>
+
+        <!-- Recent Activity -->
+        <section id="recent-activity">
+            <h2>Recent Activity</h2>
+
+           <article>
+    <h2>Machine Learning</h2>
+    <p>Course Started: 
+        <time datetime="2025-11-28T09:30">Nov 28, 2025 - 9:30 AM</time>
+    </p>
+</article>
+
+
+            <article>
+                <h2> Web Programming </h2>   
+                <p>Assignment Submitted:
+                    <br><time datetime="2025-11-26T14:10">Nov 26, 2025 - 2:10 PM</time>
+                </p>
+            </article>
+
+            <article>
+                <h2> Data Structures </h2>  
+                <p>Quiz Completed:
+                    <br><time datetime="2025-11-25T18:30">Nov 25, 2025 - 6:30 PM</time>
+                </p>
+            </article>
+
+            <article>
+                <h2> Python Programming </h2>  
+                <p>Certificate Earned:
+                     <br><time datetime="2025-11-22T11:00">Nov 22, 2025 - 11:00 AM</time>
+                </p>
+            </article>
+
+            <article>
+                <h2> Operating Systems </h2>  
+                <p>Course Started:
+                    <br><time datetime="2025-11-20T10:20">Nov 20, 2025 - 10:20 AM</time>
+                </p>
+            </article>
+        </section>
+
+        <hr>
+
+        <!-- ASIDE -->
+        <aside>
+            <h3>Recommended Courses</h3>
+            <ul>
+    <li>
+        <figure>
+            <img src="../images/ai.jpg" alt="AI Basics" width="80">
+            <figcaption>AI Basics</figcaption>
+        </figure>
+    </li>
+    <li>
+        <figure>
+            <img src="../images/TB_Cloud_Computing_OSE_BP_WB_2024.jpg" alt="Cloud Computing" width="80">
+            <figcaption>Cloud Computing</figcaption>
+        </figure>
+    </li>
+    <li>
+        <figure>
+            <img src="../images/Security.jpg" alt="Cyber Security" width="80">
+            <figcaption>Cyber Security</figcaption>
+        </figure>
+    </li>
+</ul>
+
+<h3>Achievements</h3>
+<ul>
+    <li><img src="../images/fast-learner.jpg" alt="Fast Learner Badge" width="60"> Fast Learner</li>
+    <li><img src="../images/TopScorer.jpg" alt="Top Scorer Badge" width="60"> Top Scorer</li>
+    <li><img src="../images/perfect.jpg" alt="Perfect Attendance Badge" width="60"> Perfect Attendance</li>
+</ul>
+
+
+            <h3>Learning Goals Progress</h3>
+            <p>Goal: 200 Learning Hours (60% Completed)</p>
+<h3>Calendar</h3>
+<iframe src="https://www.gu.edu.eg/wp-content/uploads/2025/09/Academic-Calender-2025-2026-.pdf" 
+        title="Academic Calendar 2025-2026" width="500" height="500"></iframe>
+
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">My Grades</a></li>
+                <li><a href="#">Submit Assignment</a></li>
+                <li><a href="#">Course Materials</a></li>
+                <li><a href="#">Support Center</a></li>
+            </ul>
+        </aside>
+
+    </div>
+
+    <hr>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2025 University Portal</p>
+    </footer>
+
+</body>
+</html>

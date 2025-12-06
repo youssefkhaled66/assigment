@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Course Catalog - EduConnect</title>
+</head>
+
+<body>
+
+    <!--HEADER -->
+    <header>
+        <h1>EduConnect</h1>
+        <p>Your Gateway to Modern Learning</p>
+
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="course-catalog.html">Course Catalog</a></li>
+                <li><a href="course-detail.html">Course Details</a></li>
+                <li><a href="student-dashboard.html">Student Dashboard</a></li>
+                <li><a href="registration.html">Registration</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+                <li><a href="https://www.gu.edu.eg" target="_blank">Galala University</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- BREADCRUMB-->
+    <nav aria-label="breadcrumb">
+        Home > Course Catalog
+    </nav>
+
+    <!-- MAIN -->
+    <main style="display:flex; gap:20px;">
+
+        <!--FILTER SIDEBAR  -->
+        <aside style="width:20%;">
+            <h2>Filters</h2>
+
+            <form>
+
+                <h3>Category</h3>
+                <label><input type="checkbox" name="cat"> Web Development</label><br>
+                <label><input type="checkbox" name="cat"> Data Science</label><br>
+                <label><input type="checkbox" name="cat"> Cyber Security</label><br>
+
+                <h3>Level</h3>
+                <label><input type="radio" name="level"> Beginner</label><br>
+                <label><input type="radio" name="level"> Intermediate</label><br>
+                <label><input type="radio" name="level"> Advanced</label><br>
+
+                <h3>Duration</h3>
+                <select>
+                    <option>1–2 Weeks</option>
+                    <option>1 Month</option>
+                    <option>2 Months</option>
+                    <option>3+ Months</option>
+                </select>
+
+                <h3>Rating</h3>
+                <input type="range" min="1" max="5">
+
+                <br><br>
+                <button type="submit">Apply Filters</button>
+            </form>
+        </aside>
+
+        <!--COURSE GRID  -->
+        <div style="width:80%;">
+
+            <!-- Search + Sort + Results -->
+            <form>
+                <input type="search" placeholder="Search courses...">
+                <select>
+                    <option>Sort by Popularity</option>
+                    <option>Sort by Price</option>
+                    <option>Sort by Rating</option>
+                    <option>Sort by Newest</option>
+                </select>
+            </form>
+
+            <p>Showing 6 Courses</p>
+
+            <div>
+                <!-- ================= COURSE 1 ================= -->
+                <article>
+                    <figure>
+                        <img src="../images/Webapp.jpg" alt="Course Image" width="600">
+                        <figcaption>Web Development Bootcamp</figcaption>
+                    </figure>
+                    <h3>Web Development Bootcamp</h3>
+                    <p>Learn HTML, CSS, JavaScript, and build modern websites.</p>
+
+                    Instructor: John Doe
+
+                    <dl>
+                        <dt>Duration:</dt><dd>8 Weeks</dd>
+                        <dt>Level:</dt><dd>Beginner</dd>
+                        <dt>Price:</dt><dd>$120</dd>
+                    </dl>
+
+                    Rating: ★★★☆
+
+                    <ul>
+                        <li>Full projects</li>
+                        <li>Hands-on practice</li>
+                        <li>Certificate</li>
+                    </ul>
+
+                    <a href="course-detail.html">View Details</a>
+                </article>
+
+                <!-- COURSE 2 -->
+                <article>
+                    <figure>
+                        <img src="../images/Datascience.jpg" alt="Data Course" width="600">
+                        <figcaption>Data Science Intro</figcaption>
+                    </figure>
+                    <h3>Data Science Intro</h3>
+                    <p>Basics of data analysis, visualization, and Python.</p>
+
+                    Instructor: Sarah Ali
+
+                    <dl>
+                        <dt>Duration:</dt><dd>6 Weeks</dd>
+                        <dt>Level:</dt><dd>Intermediate</dd>
+                        <dt>Price:</dt><dd>$150</dd>
+                    </dl>
+
+                    Rating: ★★★★☆
+
+                    <ul>
+                        <li>Python basics</li>
+                        <li>Data visualization</li>
+                        <li>Real datasets</li>
+                    </ul>
+
+                    <a href="course-detail.html">View Details</a>
+                </article>
+
+                <!-- COURSE 3 -->
+                <article>
+                    <figure>
+                        <img src="../images/Security.jpg" alt="Cyber Security" width="600">
+                        <figcaption>Cyber Security Essentials</figcaption>
+                    </figure>
+                    <h3>Cyber Security Essentials</h3>
+                    <p>Introduction to cybersecurity concepts and tools.</p>
+
+                    Instructor: Mark Green
+
+                    <dl>
+                        <dt>Duration:</dt><dd>4 Weeks</dd>
+                        <dt>Level:</dt><dd>Beginner</dd>
+                        <dt>Price:</dt><dd>$100</dd>
+                    </dl>
+
+                    Rating: ★★★☆☆
+
+                    <ul>
+                        <li>Threats & attacks</li>
+                        <li>Network basics</li>
+                        <li>Protection tools</li>
+                    </ul>
+
+                    <a href="course-detail.html">View Details</a>
+                </article>
+
+                <!-- COURSE 4 -->
+                <article>
+                    <figure>
+                        <img src="../images/ai-fundamentals.jpg" alt="AI Course" width="600">
+                        <figcaption>AI Fundamentals</figcaption>
+                    </figure>
+                    <h3>AI Fundamentals</h3>
+                    <p>Basics of artificial intelligence and machine learning.</p>
+
+                    Instructor: Dr. Adam Smith
+
+                    <dl>
+                        <dt>Duration:</dt><dd>10 Weeks</dd>
+                        <dt>Level:</dt><dd>Advanced</dd>
+                        <dt>Price:</dt><dd>$250</dd>
+                    </dl>
+
+                    Rating: ★★★★★
+
+                    <ul>
+                        <li>Machine learning</li>
+                        <li>Neural networks</li>
+                        <li>AI ethics</li>
+                    </ul>
+
+                    <a href="course-detail.html">View Details</a>
+                </article>
+
+                <!-- COURSE 5 -->
+                <article>
+                    <figure>
+                        <img src="../images/mobile-web-development.jpg" alt="Mobile Dev" width="600">
+                        <figcaption>Mobile App Development</figcaption>
+                    </figure>
+                    <h3>Mobile App Development</h3>
+                    <p>Create Android and iOS apps using modern tools.</p>
+
+                    Instructor: Lina Hamid
+
+                    <dl>
+                        <dt>Duration:</dt><dd>12 Weeks</dd>
+                        <dt>Level:</dt><dd>Intermediate</dd>
+                        <dt>Price:</dt><dd>$230</dd>
+                    </dl>
+
+                    Rating: ★★★★☆
+
+                    <ul>
+                        <li>Android Studio</li>
+                        <li>iOS basics</li>
+                        <li>Cross-platform tools</li>
+                    </ul>
+
+                    <a href="course-detail.html">View Details</a>
+                </article>
+
+                <!-- COURSE 6 -->
+                <article>
+                    <figure>
+                        <img src="../images/TB_Cloud_Computing_OSE_BP_WB_2024.jpg" alt="Cloud Computing" width="600">
+                        <figcaption>Cloud Computing Basics</figcaption>
+                    </figure>
+                    <h3>Cloud Computing Basics</h3>
+                    <p>Learn AWS, Azure, and cloud infrastructure.</p>
+
+                    Instructor: Eng. Samir
+
+                    <dl>
+                        <dt>Duration:</dt><dd>5 Weeks</dd>
+                        <dt>Level:</dt><dd>Beginner</dd>
+                        <dt>Price:</dt><dd>$140</dd>
+                    </dl>
+
+                    Rating: ★★★★☆
+
+                    <ul>
+                        <li>AWS basics</li>
+                        <li>Cloud security</li>
+                        <li>Deployment</li>
+                    </ul>
+
+                    <a href="course-detail.html">View Details</a>
+                </article>
+            </div>
+
+            <!-- ========== COURSE COMPARISON TABLE =========== -->
+          
+        <table style="border: 1px solid black; border-collapse: collapse;">
+    <caption>Course Comparison Table</caption>
+    <thead>
+        <tr>
+            <th style="border:1px solid black; padding:6px;">Course Name</th>
+            <th style="border:1px solid black; padding:6px;">Price</th>
+            <th style="border:1px solid black; padding:6px;">Duration</th>
+            <th style="border:1px solid black; padding:6px;">Level</th>
+            <th style="border:1px solid black; padding:6px;">Rating</th>
+            <th style="border:1px solid black; padding:6px;">Enrollment</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td style="border:1px solid black; padding:6px;" rowspan="2">Web Development Bootcamp</td>
+            <td style="border:1px solid black; padding:6px;">$120</td>
+            <td style="border:1px solid black; padding:6px;">8 Weeks</td>
+            <td style="border:1px solid black; padding:6px;">Beginner</td>
+            <td style="border:1px solid black; padding:6px;">★★★★☆</td>
+            <td style="border:1px solid black; padding:6px;">320</td>
+        </tr>
+        <tr>
+            <td style="border:1px solid black; padding:6px;" colspan="5">Best for beginners who want full-stack intro</td>
+        </tr>
+
+        <tr>
+            <td style="border:1px solid black; padding:6px;">Data Science Intro</td>
+            <td style="border:1px solid black; padding:6px;">$150</td>
+            <td style="border:1px solid black; padding:6px;">6 Weeks</td>
+            <td style="border:1px solid black; padding:6px;">Intermediate</td>
+            <td style="border:1px solid black; padding:6px;">★★★★☆</td>
+            <td style="border:1px solid black; padding:6px;">280</td>
+        </tr>
+
+        <tr>
+            <td style="border:1px solid black; padding:6px;">AI Fundamentals</td>
+            <td style="border:1px solid black; padding:6px;">$250</td>
+            <td style="border:1px solid black; padding:6px;">10 Weeks</td>
+            <td style="border:1px solid black; padding:6px;">Advanced</td>
+            <td style="border:1px solid black; padding:6px;">★★★★★</td>
+            <td style="border:1px solid black; padding:6px;">150</td>
+        </tr>
+    </tbody>
+</table>
+
+        </div>
+    </main>
+
+    <!-- ================== FOOTER ================== -->
+    <footer>
+        <p><a href="mailto:educonnect@gmail.com">Send Email</a></p>
+        <p>
+            <a href="https://www.linkedin.com/">LinkedIn</a> |
+            <a href="https://www.facebook.com/">Facebook</a> |
+            <a href="https://x.com/">Twitter</a>
+        </p>
+        <p><a href="about.html">About Us</a></p>
+        <p>@2025 EduConnect. All rights reserved.</p>
+        <p>Last updated: December 2025</p>
+    </footer>
+
+</body>
+</html>

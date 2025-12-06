@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scientific Calculator</title>
+</head>
+
+<body>
+
+<header>
+    <h1>Scientific Calculator</h1>
+    <nav>
+        <a href="calculator.html">Calculator</a>
+    </nav>
+</header>
+
+<form action="calculator-result.html" method="get">
+
+    <!-- Display Area -->
+    <fieldset>
+        <legend>Display</legend>
+        <label for="display">Result:</label>
+        <input type="text" id="display" name="display" readonly>
+    </fieldset>
+
+    <!-- Number Inputs -->
+    <fieldset>
+        <legend>Inputs</legend>
+
+        <label for="num1">First Number:</label>
+        <input type="number" id="num1" name="num1" required>
+
+        <br><br>
+
+        <label for="num2">Second Number:</label>
+        <input type="number" id="num2" name="num2">
+    </fieldset>
+
+    <!-- Basic Operations -->
+    <fieldset>
+        <legend>Basic Operations</legend>
+
+        <label>
+            <input type="radio" name="operation" value="add" required> Add (+)
+        </label><br>
+
+        <label>
+            <input type="radio" name="operation" value="subtract"> Subtract (−)
+        </label><br>
+
+        <label>
+            <input type="radio" name="operation" value="multiply"> Multiply (×)
+        </label><br>
+
+        <label>
+            <input type="radio" name="operation" value="divide"> Divide (÷)
+        </label>
+
+    </fieldset>
+
+    <!-- Advanced Operations -->
+    <fieldset>
+        <legend>Advanced Operations</legend>
+
+        <label>
+            <input type="radio" name="operation" value="power"> Power (xⁿ)
+        </label><br>
+
+        <label>
+            <input type="radio" name="operation" value="sqrt"> Square Root (√x) — uses First Number only
+        </label><br>
+
+        <label>
+            <input type="radio" name="operation" value="percent"> Percentage (% of)
+        </label>
+
+    </fieldset>
+
+    <!-- Memory Functions -->
+    <fieldset>
+        <legend>Memory</legend>
+
+        <button type="submit" name="memory" value="store">Store</button>
+        <button type="submit" name="memory" value="recall">Recall</button>
+        <button type="submit" name="memory" value="clear">Clear Memory</button>
+
+        <!-- Hidden Fields -->
+        <input type="hidden" name="memoryValue" value="0">
+        <input type="hidden" name="lastResult" value="">
+    </fieldset>
+
+    <!-- Controls -->
+    <fieldset>
+        <legend>Controls</legend>
+
+        <button type="reset">Clear All</button>
+        <button type="submit" name="equals" value="1">= Calculate</button>
+    </fieldset>
+
+    <!-- History Section -->
+    <fieldset>
+        <legend>Calculation History</legend>
+
+        <ol>
+            <li>Example: 5 + 3 = 8</li>
+            <li>Example: 10 % 50 = 5</li>
+        </ol>
+    </fieldset>
+
+</form>
+
+<footer>
+    <p>&copy; 2025 Calculator Interface</p>
+</footer>
+
+</body>
+</html>
