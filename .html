@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration Form</title>
+</head>
+<body>
+
+<form>
+    <fieldset>
+        <legend>Event Registration</legend>
+
+        <!-- Participant Name -->
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <!-- Email Address -->
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <!-- Event Type -->
+        <label for="event">Choose Event:</label><br>
+        <select id="event" name="event" required>
+            <option value="">Select Event</option>
+            <option value="tech_talk">Tech Talk</option>
+            <option value="workshop">Workshop</option>
+            <option value="competition">Competition</option>
+        </select><br><br>
+
+        <!-- Event Date -->
+        <label for="date">Event Date:</label><br>
+        <input type="date" id="date" name="date" required><br><br>
+
+        <!-- Notes -->
+        <label for="notes">Notes:</label><br>
+        <textarea id="notes" name="notes" rows="4" cols="40"></textarea><br><br>
+
+        <!-- Submit -->
+        <button type="submit">Submit</button>
+    </fieldset>
+</form>
+
+</body>
+</html>
